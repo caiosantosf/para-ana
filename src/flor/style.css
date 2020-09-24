@@ -1,0 +1,95 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #000;
+  overflow: hidden;
+}
+
+canvas {
+  bottom: 0;
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+canvas:active {
+  cursor: move;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.variaboard-button {
+  width: 300px;
+  height: 60px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  }
+
+.variaboard-button:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+
+.variaboard-control{
+  display: none;
+}
+
+.variaboard-title{
+  color:white;
+  margin: 30px;
+}
+
+
+.variaboard-control[title="Outra!"] {
+  display: block;
+}
+
+.variaboard-panel {
+  -webkit-animation: slide-in 500ms 3000ms ease-out forwards;
+          animation: slide-in 500ms 3000ms ease-out forwards;
+  font-family: 'Source Code Pro', monospace;
+  opacity: 0;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  visibility: hidden;
+  margin: 50px;
+}
+
+@-webkit-keyframes slide-in {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+@keyframes slide-in {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    visibility: visible;
+  }
+}
