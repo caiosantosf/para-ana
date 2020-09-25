@@ -73,7 +73,7 @@ canvas:active {
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
   visibility: hidden;
-  margin: 50px;
+  margin: 80px;
 }
 
 @-webkit-keyframes slide-in {
